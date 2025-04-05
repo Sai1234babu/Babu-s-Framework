@@ -40,6 +40,7 @@ public class ToCreateContactOrganizationToOrganizationTest extends BaseClass {
 	    //Assert.fail();
 		ContactsInformationPage cip = new ContactsInformationPage(driver);
 		String name = cip.getContactsHeader().getText();
+		System.out.println("================================");
 		if (name.contains(LASTNAME)) {
 			System.out.println(name + "----Passed");
 		} else {
